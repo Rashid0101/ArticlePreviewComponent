@@ -1,0 +1,135 @@
+body {
+  background-color: #ecf2f8;
+}
+
+.container {
+  width: 70rem;
+  height: 28rem;
+  background-color: #fff;
+  margin: 30rem auto;
+  border-radius: 1rem;
+  position: relative;
+  box-shadow: 0px 40px 40px -10px rgba(225, 219, 201, 0.5);
+}
+
+.container-flex {
+  display: flex;
+}
+
+.big-img {
+  width: 26rem;
+  height: 28rem;
+  border-top-left-radius: 1rem;
+  border-bottom-left-radius: 1rem;
+}
+
+.text-info h2 {
+  color: #48556a;
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 2.8rem; /* 140% */
+  letter-spacing: 0.025rem;
+  margin: 3.2rem 0 1.2rem 3.2rem;
+}
+
+.text-info > p {
+  color: #6e8098;
+  font-size: 1.3rem;
+  font-weight: 500;
+  line-height: 2rem; /* 153.846% */
+  letter-spacing: 0.0122rem;
+  margin: 0 0 2rem 3.2rem;
+}
+
+.img-flex {
+  display: flex;
+}
+
+.img-flex img {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 4rem;
+  margin: 0 1.6rem 2rem 3.2rem;
+}
+
+.img-flex h3 {
+  color: #48556a;
+  font-size: 1.3rem;
+  font-weight: 700;
+  line-height: 2rem; /* 153.846% */
+  letter-spacing: 0.0122rem;
+}
+
+.img-flex p {
+  color: #9daec2;
+  font-size: 1.3rem;
+  font-weight: 500;
+  line-height: 2rem; /* 153.846% */
+  letter-spacing: 0.0122rem;
+}
+.icon-share {
+  width: 3.2rem;
+  height: 3.2rem;
+  margin-left: 16.1rem;
+  position: relative;
+  margin-top: 15px;
+  cursor: pointer;
+}
+
+.icon-share .background-circle {
+  fill: #ecf2f8;
+  transition: fill 0.3s ease;
+}
+
+.icon-share:hover .background-circle {
+  fill: #48556a;
+}
+
+.icon-share .icon-path {
+  transition: fill 0.3s ease;
+}
+
+.icon-share:hover .icon-path {
+  fill: #ffffff; /* Optional: change the icon color on hover */
+}
+
+.share-container {
+  width: 25rem;
+  height: 5.7rem;
+  background-color: #48556a;
+  position: absolute;
+  bottom: 93px;
+  right: -64px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  border-radius: 2rem;
+  filter: drop-shadow(0px 10px 10px rgba(201, 213, 225, 0.5));
+  display: none;
+}
+.icon-share::after {
+  content: "";
+  position: absolute;
+  bottom: 50px; /* Position the arrow below the box */
+  left: 50%; /* Center the arrow horizontally */
+  transform: translateX(-50%);
+  width: 0;
+  height: 0;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-top: 20px solid #4a5568; /* Same color as the box */
+  filter: drop-shadow(0px 10px 10px rgba(201, 213, 225, 0.5));
+  display: none;
+}
+.icon-share.active::after {
+  display: block;
+}
+
+.share-container p {
+  color: #9daec2;
+  font-size: 1.3rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 2rem; /* 153.846% */
+  letter-spacing: 0.5rem;
+}
